@@ -3,6 +3,8 @@ import './pages/home/home.dart';
 import './pages/favorite/favorite.dart';
 import './pages/person/person.dart';
 import './pages/setting/setting.dart';
+import './pages/publicWidget/customerDrawer.dart';
+import './pages/demos/text_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,6 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      routes: {
+        '/textDemo':(context)=> TextDemo()
+      },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -47,6 +52,8 @@ class SettingBottomNavigationState extends State<SettingBottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('Flutter知识点总结'),elevation: 0),
+      drawer: CustomerDrawer(),
       body: Container(
         child: Center(
           child: pages[_currentIndex],
