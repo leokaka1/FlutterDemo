@@ -1,4 +1,4 @@
-String showCase =
+final String showCase =
       'We’ve spent the last few months redesigning the website and how its information is organized. We hope you can more easily find the docs you are looking for. Some of the changes to the website include:Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flutter正在被越来越多的开发者和组织使用，并且Flutter是完全免费、开源的。';
 
 class TextWidgetProperties {
@@ -98,7 +98,7 @@ final List<TextWidgetProperties> widgetProperties =[
   ),
 ];
 
-List<String> alignTitle = [
+final List<String> alignTitle = [
     '居中(center)',
     '末尾(end)',
     '起始(start)',
@@ -107,28 +107,28 @@ List<String> alignTitle = [
     '拉伸(stretch)',
   ];
 
-List<String> textDirectionTitle = [
+final List<String> textDirectionTitle = [
   '左侧(ltr)',
   '右侧(rtl)',
 ];
 
-List<String> softwrapTitle = [
+final List<String> softwrapTitle = [
   '是(true)',
   '否(false)',
 ];
 
-List<String> overFlowTitle = [
+final List<String> overFlowTitle = [
   'clip(剪裁)',
   'fade (渐隐)',
   'ellipsis(省略号)',
 ];
 
-List<String> textScaleFactorTitle = [
+final List<String> textScaleFactorTitle = [
   '1.0',
   '2.0',
 ];
 
-List<String> maxLinesTitle = [
+final List<String> maxLinesTitle = [
   '1-Line',
   '3-Line',
 ];

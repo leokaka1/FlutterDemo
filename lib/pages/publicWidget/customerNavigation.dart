@@ -41,13 +41,13 @@ class SettingBottomNavigationState extends State<SettingBottomNavigation> {
         currentIndex: _currentIndex,
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('基础学习')),
+          BottomNavigationBarItem(icon: Icon(Icons.widgets), title: Text('基础部件')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person), title: Text('Person')),
+              icon: Icon(Icons.pages), title: Text('基础布局')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.favorite), title: Text('Favorite')),
+              icon: Icon(Icons.developer_mode), title: Text('小示例')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.settings), title: Text('Setting')),
+              icon: Icon(Icons.settings), title: Text('说明')),
         ],
         onTap: _hanldeBottomIndex,
       ),

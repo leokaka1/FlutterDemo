@@ -15,29 +15,36 @@ class Pages{
 
 final List<Pages> pageInfo =[
   Pages(
-    title: 'Text基本学习',
-    subTitle:'基本的Text用法学习',
+    title: '文本基本学习',
+    subTitle:'Text',
     directionPage: '/text',
     rightIcon: Icon(Icons.text_fields)
   ),
 
   Pages(
-    title: '基本布局学习',
-    subTitle:'有关layout的基本学习',
+    title: '图片展示基本学习',
+    subTitle:'Images',
+    directionPage: '/images',
+    rightIcon: Icon(Icons.image)
+  ),
+
+  Pages(
+    title: '水平方向上排列',
+    subTitle:'Row',
     directionPage: '/layout',
     rightIcon: Icon(Icons.layers)
   ),
 
   Pages(
-    title: 'ListView基本学习',
-    subTitle:'基本的ListView用法学习',
+    title: '列表视图基本学习',
+    subTitle:'ListView',
     directionPage: '/textDemo',
     rightIcon: Icon(Icons.line_style)
   ),
 
   Pages(
-    title: 'ScrollView基本学习',
-    subTitle:'ScrollView学习',
+    title: '滚动视图基本学习',
+    subTitle:'ScrollView',
     directionPage: '/textDemo',
     rightIcon: Icon(Icons.pages)
   ),
