@@ -32,21 +32,56 @@ final List<Pages> pageInfo =[
     title: '水平方向上排列',
     subTitle:'Row',
     directionPage: '/layout',
-    rightIcon: Icon(Icons.layers)
+    rightIcon: Icon(Icons.view_carousel)
   ),
 
   Pages(
-    title: '列表视图基本学习',
+    title: '垂直方向上排列',
+    subTitle:'Column',
+    directionPage: '/textDemo',
+    rightIcon: Icon(Icons.view_column)
+  ),
+
+  Pages(
+    title: '按钮',
+    subTitle:'Button',
+    directionPage: '/textDemo',
+    rightIcon: Icon(Icons.radio_button_checked)
+  ),
+
+  Pages(
+    title: '表单',
+    subTitle:'Form',
+    directionPage: '/textDemo',
+    rightIcon: Icon(Icons.input)
+  ),
+
+  Pages(
+    title: '列表',
     subTitle:'ListView',
     directionPage: '/textDemo',
-    rightIcon: Icon(Icons.line_style)
+    rightIcon: Icon(Icons.list)
   ),
 
   Pages(
-    title: '滚动视图基本学习',
-    subTitle:'ScrollView',
+    title: '弹窗',
+    subTitle:'Popup',
     directionPage: '/textDemo',
-    rightIcon: Icon(Icons.pages)
+    rightIcon: Icon(Icons.bubble_chart)
+  ),
+
+  Pages(
+    title: '切片',
+    subTitle:'Chips',
+    directionPage: '/textDemo',
+    rightIcon: Icon(Icons.card_membership)
+  ),
+
+  Pages(
+    title: '悬浮按钮',
+    subTitle:'FloattingButton',
+    directionPage: '/textDemo',
+    rightIcon: Icon(Icons.format_indent_decrease)
   ),
 ];
 
