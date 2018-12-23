@@ -4,6 +4,7 @@ import '../favorite/favorite.dart';
 import '../person/person.dart';
 import '../setting/setting.dart';
 import '../publicWidget/customerDrawer.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 class SettingBottomNavigation extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -29,6 +30,7 @@ class SettingBottomNavigationState extends State<SettingBottomNavigation> {
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.instance = ScreenUtil(width: 750, height: 1334)..init(context);
     return Scaffold(
       appBar: AppBar(title: Text('Flutter知识点总结'),elevation: 0),
       drawer: CustomerDrawer(),
@@ -43,7 +45,7 @@ class SettingBottomNavigationState extends State<SettingBottomNavigation> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.widgets), title: Text('基础部件')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.pages), title: Text('基础布局')),
+              icon: Icon(Icons.pages), title: Text('常用功能')),
           BottomNavigationBarItem(
               icon: Icon(Icons.developer_mode), title: Text('小示例')),
           BottomNavigationBarItem(

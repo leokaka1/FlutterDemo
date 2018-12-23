@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../publicWidget/customerRichText.dart';
 import '../../../model/imageswidgetProperties.dart';
-import '../basicDetailsPag.dart';
+import '../basicDetailsPage.dart';
 
 class ImageDemo extends StatelessWidget {
   // 一些基本属性
@@ -57,7 +57,7 @@ class ImageDemo extends StatelessWidget {
         SizedBox(height: 15),
         Divider(height: 30, color: Colors.grey),
         Text(
-          'Image的基本属性值',
+          'Image 的基本属性值',
           style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
@@ -97,8 +97,8 @@ class ImageDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BasicDetailPage(
-      titleName: 'Images组件的使用',
-      subTitleName: 'Image加载的基本分类',
+      titleName: 'Images 组件的使用',
+      subTitleName: 'Image 加载的基本分类',
       detailContent: _showBasicProperties(),
       routeName: '/imageShow',
     );

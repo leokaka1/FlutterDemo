@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../model/TextwidgetProperties.dart';
-import '../basicDetailsPag.dart';
+import '../basicDetailsPage.dart';
 
 class TextDemo extends StatelessWidget {
   Widget _handleItem() {
@@ -32,7 +32,7 @@ class TextDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return BasicDetailPage(
         titleName: 'Text组件的使用',
-        subTitleName: 'Text属性学习',
+        subTitleName: 'Text 属性',
         detailContent: _handleItem(),
         routeName: '/textShow',
       );

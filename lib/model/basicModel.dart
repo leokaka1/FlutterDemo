@@ -29,9 +29,16 @@ final List<Pages> pageInfo =[
   ),
 
   Pages(
+    title: '容器',
+    subTitle:'Container',
+    directionPage: '/container',
+    rightIcon: Icon(Icons.check_box)
+  ),
+
+  Pages(
     title: '水平方向上排列',
     subTitle:'Row',
-    directionPage: '/layout',
+    directionPage: '/row',
     rightIcon: Icon(Icons.view_carousel)
   ),
 
