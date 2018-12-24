@@ -92,3 +92,12 @@ final List<Pages> pageInfo =[
   ),
 ];
 
+final List<Pages> functionPageInfo = [
+  Pages(
+    title: '网络请求',
+    subTitle:'NetworkRequest',
+    directionPage: '/dish',
+    rightIcon: Icon(Icons.network_wifi)
+  ),
+];
+

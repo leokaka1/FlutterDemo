@@ -11,6 +11,8 @@ import './pages/demos/row_demo/row_demo.dart';
 import './pages/demos/row_demo/row_showdemo.dart';
 import './pages/demos/container.demo/container_demo.dart';
 import './pages/demos/container.demo/container_showDemo.dart';
+import './pages/functionPage/networkRequest/dish_example.dart';
+import './pages/functionPage/networkRequest/dish_detailPage.dart';
 import 'package:flutter/cupertino.dart';//ios风格
 import 'package:flutter/foundation.dart';//区分系统版本
 
@@ -20,14 +22,14 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 
   final ThemeData kIOSTheme = new ThemeData(    //Cupertino主题风格
-    primaryColor: Colors.lightBlue,
+    primaryColor: Colors.pinkAccent[100],
     primaryColorBrightness: Brightness.dark,
-  
   );
 
   final ThemeData kDefaultTheme = new ThemeData(    //默认的Material主题风格
     primaryColor: Colors.orangeAccent,
     accentColor: Colors.orangeAccent[400],
+    primaryColorBrightness: Brightness.dark,
   );
 
   // This widget is the root of your application.
@@ -48,7 +50,8 @@ class MyApp extends StatelessWidget {
         '/layout':(context)=> LayoutDemo(),
         '/listView':(context)=>ListView_Demo(),
         '/scrollView':(context)=>ScrollView_Demo(),
-        
+        '/dish':(context)=>DishRequestDemo(),
+        '/dishDetail':(context)=>DishDetailsPage(),
       },
       debugShowCheckedModeBanner: false,
       theme: defaultTargetPlatform == TargetPlatform.iOS ? kIOSTheme : kDefaultTheme,
